@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestingGCC]" guice-stage="DEVELOPMENT">
+  <test name="CinemaTest(failed)">
+    <classes>
+      <class name="GCC.TestCases.Login_TC_001">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- GCC.TestCases.Login_TC_001 -->
+    </classes>
+  </test> <!-- CinemaTest(failed) -->
+</suite> <!-- Failed suite [TestingGCC] -->

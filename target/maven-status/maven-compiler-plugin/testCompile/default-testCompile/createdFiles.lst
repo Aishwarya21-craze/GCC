@@ -1,0 +1,6 @@
+GCC\PageObjects\LoginPage.class
+GCC\TestCases\Login_TC_001.class
+GCC\PageObjects\RegistrationPage.class
+GCC\TestCases\BaseClass.class
+GCC\TestUtilities\ExtentReporting.class
+GCC\TestUtilities\ReadConfig.class
