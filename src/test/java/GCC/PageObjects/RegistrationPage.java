@@ -46,7 +46,7 @@ WebDriver driver;
 		password.sendKeys(pass);
 	}
 	
-	public void setMobile(String mobi  )
+	public void setMobile(String mobi)
 	{
 		mobile.sendKeys(mobi);
 	}
@@ -55,8 +55,6 @@ WebDriver driver;
 	{
 		signup.click();
 	}
-	
-	
 	
 	
 	

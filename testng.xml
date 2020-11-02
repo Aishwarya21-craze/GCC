@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
+
+<listeners>
+
+<listener class-name = "GCC.TestUtilities.ExtentReporting"/>
+
+</listeners>
+<test name = "GCC test in Chrome" >
+<parameter name = "browser" value = "chrome" />
+
     <classes>
-      <!--  class name="GCC.TestCases.Login_TC_001"/> -->
-       <class name = "GCC.TestCases.Registration_TC_002" />
+       <class name="GCC.TestCases.Login_TC_001"/> 
+       <!--  class name = "GCC.TestCases.Registration_TC_002" /> -->
       <!--  class name = "GCC.TestCases.Reg" /> -->
     </classes>
   </test> <!-- Test -->

@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test name="Default test(failed)">
     <classes>
-      <class name="GCC.TestCases.Registration_TC_002">
+      <class name="GCC.TestCases.Login_TC_001">
         <methods>
+          <include name="login"/>
           <include name="LaunchChrome"/>
-          <include name="teardown"/>
-          <include name="registration" invocation-numbers="0 1 2 3 4"/>
         </methods>
-      </class> <!-- GCC.TestCases.Registration_TC_002 -->
+      </class> <!-- GCC.TestCases.Login_TC_001 -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

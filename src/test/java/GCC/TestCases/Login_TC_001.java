@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 
 import GCC.PageObjects.HomePage;
 import GCC.PageObjects.LoginPage;
+import GCC.PageObjects.SplashPage;
 
 public class Login_TC_001 extends BaseClass{
 	
@@ -12,8 +13,17 @@ public class Login_TC_001 extends BaseClass{
 	public void login() throws Exception
 	
 	{
-		//WebElement Loginlink = driver.findElement(By.id("signin"));
-		//Loginlink.click();
+		//To verify if desired country is selected & home page is redirected
+		
+		SplashPage sp = new SplashPage(driver);
+		sp.clickOman();
+		
+		Thread.sleep(5000);
+		driver.getCurrentUrl();
+		if(driver.getCurrentUrl().equalsIgnoreCase("https://oman1.cinepolisgulf.com/"))
+		{
+			Assert.assertTrue(true,"Oman home page is redirected");
+		}
 		
 		HomePage hp = new HomePage(driver);
 		hp.loginbtn();

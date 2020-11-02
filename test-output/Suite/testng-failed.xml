@@ -3,13 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test name="Test(failed)">
     <classes>
-      <class name="GCC.TestCases.Registration_TC_002">
+      <class name="GCC.TestCases.Login_TC_001">
         <methods>
+          <include name="login"/>
           <include name="LaunchChrome"/>
           <include name="teardown"/>
-          <include name="registration" invocation-numbers="0 1 2 3 4"/>
         </methods>
-      </class> <!-- GCC.TestCases.Registration_TC_002 -->
+      </class> <!-- GCC.TestCases.Login_TC_001 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
